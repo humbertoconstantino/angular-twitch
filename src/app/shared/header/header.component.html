@@ -1,0 +1,15 @@
+<mat-toolbar 
+class="mat-elevation-z3">
+<img id="logo" routerLink="/" src="https://i.imgur.com/M6xTQhi.png" alt="">
+<a>Seguindo</a>
+<a>Procurar</a>
+<span class="example-spacer"></span>
+<button id="bits" mat-stroked-button><mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">request_page</span></mat-icon>Comprar Bits</button> 
+
+<button mat-button [matMenuTriggerFor]="beforeMenu"><img id="profile" src="https://i.imgur.com/mFufZCQ.jpg"></button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+</mat-toolbar>
